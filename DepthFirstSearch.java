@@ -2,7 +2,16 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Deque;
 
+/**
+ * Class to hold a static method for running a depth-first search on a graph represented as an array of linked lists
+ */
 public class DepthFirstSearch {
+    /**
+     * Run the depth first search algorithm on a graph representation and print the output to stdout
+     * @param graph The graph to run the algorithm on; represented as an array of linked lists where the index in the array
+     * is the value of the vertex - 1, and the linked list represents all the connected vertices in the graph
+     * @param vertex The vertex to start the algorithm on (this will be a number between 1 and the biggest vertex value inclusive)
+     */
     public static void begin(ArrayList<LinkedList<Integer>> graph, int vertex) {
         System.out.println("Starting Depth First Search on vertex " + vertex);
         // Create an array for keeping track of vertexes that have been explored. 

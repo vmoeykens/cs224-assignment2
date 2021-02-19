@@ -2,6 +2,9 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+/**
+ * Class for holding the hardcoded graph we are using for this assignment
+ */
 public final class Graph {
     // Hardcoding this for now... this could be much better (for example reading from a CSV file and building it)
     public ArrayList<LinkedList<Integer>> graph = new ArrayList<LinkedList<Integer>>(Arrays.asList(new LinkedList<Integer>(Arrays.asList(2, 3)),
