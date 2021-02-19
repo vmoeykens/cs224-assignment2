@@ -13,7 +13,7 @@ public class BreadthFirstSearch {
      * @param vertex The vertex to start the algorithm on (this will be a number between 1 and the biggest vertex value inclusive)
      */
     public static void begin(ArrayList<LinkedList<Integer>> graph, int vertex) {
-        System.out.println("Starting Breadth First Search on vertex " + vertex);
+        System.out.println("\nStarting Breadth First Search on vertex " + vertex);
         // Create an array for keeping track of vertexes that have been discovered. 
         boolean discovered[] = new boolean[graph.size()];
         // Set the start node as discovered 

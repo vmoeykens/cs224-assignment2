@@ -13,7 +13,7 @@ public class DepthFirstSearch {
      * @param vertex The vertex to start the algorithm on (this will be a number between 1 and the biggest vertex value inclusive)
      */
     public static void begin(ArrayList<LinkedList<Integer>> graph, int vertex) {
-        System.out.println("Starting Depth First Search on vertex " + vertex);
+        System.out.println("\nStarting Depth First Search on vertex " + vertex);
         // Create an array for keeping track of vertexes that have been explored. 
         boolean explored[] = new boolean[graph.size()];
         // Create a new lifo queue
