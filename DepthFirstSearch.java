@@ -20,17 +20,19 @@ public class DepthFirstSearch {
         Deque<Integer> q = new LinkedList<Integer>();
         // Add our starting vertex to the queue
         q.push(vertex);
+        // Mark the current node as visited
+        explored[vertex - 1] = true;
         // While items are still in the queue
         while (q.peek() != null) {
             int node = q.pop();
             System.out.println("Moving to node: " + node + " in the queue.");
-            // Set the node index (the value - 1) to explored
-            explored[node - 1] = true;
             // Iterate through edges going from this node
             while (graph.get(node - 1).peek() != null) {
                 int currentNode = graph.get(node - 1).poll();
                 System.out.println("On edge: " + currentNode);
-                if (explored[currentNode - 1] == false) {
+                if (!explored[currentNode - 1]) {
+                    // Set the node index (the value - 1) to explored
+                    explored[currentNode - 1] = true;
                     q.push(currentNode);
                 }
             }
